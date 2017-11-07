@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.justin.draganddrop.ui.MainActivity"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="0.5"
+        android:id="@+id/contact"
+        android:layout_margin="10dp"
+        android:tag="list">
+        <ListView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/contactlist"
+            android:layout_weight="0.5"
+            android:tag="list"/>
+    </LinearLayout>
+
+    <!--<ScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/move"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </ScrollView>-->
+    <com.woxthebox.draglistview.DragListView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:id="@+id/move"
+        android:tag="copylist"
+        android:layout_margin="10dp">
+
+    </com.woxthebox.draglistview.DragListView>
+
+
+
+
+</LinearLayout>
